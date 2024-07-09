@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "($env:NODE_ENV = 'production') -and (rm -r dist) -and (mkdir dist) -and (npx babel src/components --out-dir dist --copy-files)",
+    "build": "SET NODE_ENV=production && rm -rf dist && mkdir dist && npx babel src/<Your_Component_Folder> --out-dir dist --copy-files",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
