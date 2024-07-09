@@ -7,7 +7,7 @@ Cette Modale est un composant React simple et réutilisable pour afficher une mo
 Now that you have your package published, you can install it in any other project.
 To do so, you need to run the following command:
 
-from NPM : npm install oc-modal-react
+from NPM : npm install @sandytzns/oc-modal-react@0.1.1
 
 # Import your package
 
