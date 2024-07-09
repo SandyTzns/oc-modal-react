@@ -1,3 +1,21 @@
+OC-Modal-React
+
+Cette Modale est un composant React simple et réutilisable pour afficher une modale avec un message personnalisé. Ce composant peut être utilisé dans n'importe quel projet React pour afficher des notifications ou des messages d'alerte.
+
+# Install your package
+
+Now that you have your package published, you can install it in any other project.
+To do so, you need to run the following command:
+
+from NPM : npm install oc-modal-react
+
+# Import your package
+
+Now that you have your package installed, you can import it in any other project.
+To do so, you need to run the following command:
+
+import Modal from oc-modal-react;
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

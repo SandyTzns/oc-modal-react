@@ -2,7 +2,7 @@
 
 import React from "react";
 import PropTypes from "prop-types";
-import "./Modal.css";
+import "./index.css";
 
 /**
  * BasicModal component renders a modal dialog with a message and a close button.
