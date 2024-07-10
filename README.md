@@ -7,17 +7,25 @@ Cette Modale est un composant React simple et réutilisable pour afficher une mo
 Now that you have your package published, you can install it in any other project.
 To do so, you need to run the following command:
 
-from NPM : `npm i oc-modal-react`
+from NPM :
 
+- ```sh
+  npm i oc-modal-react
+  ```
+
+````
 ## Import your package
 
 Now that you have your package installed, you can import it in any other project.
 To do so, you need to run the following command:
 
-import Modal from "oc-modal-react/dist/index"
+- ```js
+ import Modal from "oc-modal-react/dist/index";
+````
 
+````
 ### Example
-
+- ```js
 import React, { useState } from 'react';
 import Modal from 'oc-modal-react/dist/index';
 
@@ -44,6 +52,7 @@ return (
 }
 
 export default App;
+````
 
 #### Props
 
@@ -56,3 +65,7 @@ The Modal component accepts the following props:
 
 - message: You can pass any string value to be displayed inside the modal.
 - closeModal: You should pass a function that will handle the logic to close the modal, typically setting a state to false or similar.
+
+```
+
+```
