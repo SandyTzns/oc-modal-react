@@ -9,63 +9,59 @@ To do so, you need to run the following command:
 
 from NPM :
 
-- ```sh
+```bash
   npm i oc-modal-react
-  ```
+```
 
-````
 ## Import your package
 
 Now that you have your package installed, you can import it in any other project.
-To do so, you need to run the following command:
+To do so, you need to add the following import into your component:
 
-- ```js
- import Modal from "oc-modal-react/dist/index";
-````
+```javascript
+import Modal from "oc-modal-react/dist/index";
+```
 
-````
 ### Example
-- ```js
-import React, { useState } from 'react';
-import Modal from 'oc-modal-react/dist/index';
+
+This is an example to show you how you can integrate your component into your code
+
+```javascript
+import React, { useState } from "react";
+import Modal from "oc-modal-react/dist/index";
 
 function App() {
-const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-const openModal = () => {
-setIsModalOpen(true);
-};
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
 
-const closeModal = () => {
-setIsModalOpen(false);
-};
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
-return (
-
-<div className="App">
-<button onClick={openModal}>Open Modal</button>
-{isModalOpen && (
-<Modal message="This is a custom message!" closeModal={closeModal} />
-)}
-</div>
-);
+  return (
+    <div className="App">
+      <button onClick={openModal}>Open Modal</button>
+      {isModalOpen && (
+        <Modal message="This is a custom message!" closeModal={closeModal} />
+      )}
+    </div>
+  );
 }
 
 export default App;
-````
+```
 
 #### Props
 
 The Modal component accepts the following props:
 
-- message (string, required): The message to be displayed inside the modal.
-- closeModal (function, required): The function to call when the close button is clicked.
+- `message` (string, required): The message to be displayed inside the modal.
+- `closeModal` (function, required): The function to call when the close button is clicked.
 
 ##### Example Usage of Props
 
 - message: You can pass any string value to be displayed inside the modal.
 - closeModal: You should pass a function that will handle the logic to close the modal, typically setting a state to false or similar.
-
-```
-
-```
