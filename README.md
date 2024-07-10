@@ -7,7 +7,7 @@ Cette Modale est un composant React simple et réutilisable pour afficher une mo
 Now that you have your package published, you can install it in any other project.
 To do so, you need to run the following command:
 
-from NPM : npm i oc-modal-react
+from NPM : `npm i oc-modal-react`
 
 ## Import your package
 
@@ -33,6 +33,7 @@ setIsModalOpen(false);
 };
 
 return (
+
 <div className="App">
 <button onClick={openModal}>Open Modal</button>
 {isModalOpen && (
